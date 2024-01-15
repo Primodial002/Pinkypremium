@@ -10,26 +10,26 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6855583104:AAE6zslM3pa_mZfM-_pZLXVtIuqNHv9DgvY")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6959375484:AAF3IRN4Rx4bBcsN8xNJn0GNci1lmLagM8s")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "27501733"))
+APP_ID = int(os.environ.get("APP_ID", "6959375484"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "687b5c7656849e9a3b125d691f824497")
+API_HASH = os.environ.get("API_HASH", "aa9fc525a5e5a837256c1f0b445af447")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001966777967"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001627533048"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5847742709"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6020928153"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://lajopoc569:suryabhai3699@cluster0.z3mprke.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "privatesharefilesdb")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://unzipbot:unzipbot@cluster0.nalwltl.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "pinkypremiumdb")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5452354891 1392184089 5602172369 5878008646").split()):
+    for x in (os.environ.get("ADMINS", "5452354891 5878008646 5685802336").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
